@@ -1,0 +1,40 @@
+name: la_garame
+description: Une application de jeu de cartes La Garame
+
+# La version suivante est pour la publication - vous pouvez la modifier
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.0.5
+  flutter_riverpod: ^2.4.9 # Alternative à Provider si vous préférez
+  equatable: ^2.0.5 # Pour comparer facilement les objets
+  vector_math: ^2.1.4 # Pour les animations avancées
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/images/logo.png
+    - assets/images/poker-table1.png
+    - assets/images/dos.png
+    - assets/images/table1.jpg
+
+    - assets/images/cards/
+    - assets/images/avatars/
+    - assets/sounds/
+
+  fonts:
+    - family: CardFont
+      fonts:
+        - asset: assets/fonts/cards.ttf
